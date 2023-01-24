@@ -6,30 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5a6e447df1.js" crossorigin="anonymous"></script>
     <title>Document</title>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgBlue: '#0c8bfd',
+                    }
+                }
+            }
+        }
+
+    </script>
+
 </head>
 
 <body>
-    <nav>
-        <img src="./Project-2 Hosting Site/assets/Logo.svg" class="w-[60px] lg:w-[80px]">
-        <ul class="">
-            <li class="">Hosting</li>
-            <li class="">Domain</li>
-            <li class="">Features</li>
-            <li class="">Support</li>
-            <li class="">Community</li>
+    <nav class="flex justify-between bg-black py-[20px] px-[20px]">
+        <img src="./Project-2 Hosting Site/assets/Logo.svg" class="w-[60px]">
+        <ul class="flex justify-center text-white">
+            <li class="hidden">Hosting</li>
+            <li class="hidden">Domain</li>
+            <li class="hidden">Features</li>
+            <li class="hidden">Support</li>
+            <li class="hidden">Community</li>
         </ul>
-        <button>Login</button>
+        <button class="">Login</button>
+        <i class="md:hidden w-[20px] fa-solid fa-bars text-white cursor-pointer"></i>
     </nav>
-    <div>
-        <div>
-            <p>The best and <span>cheapest</span> hosting for your website</p>
-            <p>Hostng your website here is easy, access is fast, server security is very well maintained, and ofcourse
+    <div class="bg-black text-white px-[30px] py-[10px]">
+        <div class="text-center">
+            <p class="text-3xl text-center py-[10px]">The best and <span class="text-bgBlue italic">cheapest</span>
+                hosting for your website</p>
+            <p class="text-xs text-center py-[10px] ">Hostng your website here is easy, access is fast, server security
+                is very well maintained, and ofcourse
                 supported by reliable servers.</p>
-            <button>Get started</button>
-            <button>Try start Free</button>
+            <div class="py-[20px] ">
+                <button class="bg-bgBlue rounded-full px-[15px] py-[5px] cursor-pointer ">Get started</button>
+                <span class="rounded-full outline outline-white px-[15px] py-[5px] ml-[8px] cursor-pointer">Try start Free</span>
+            </div>
         </div>
-        <img src="./Project-2 Hosting Site/assets/Illustrations/Group 238502.svg" alt="">
+        <img src="./Project-2 Hosting Site/assets/Illustrations/Group 238502.svg" class="hidden" alt="">
     </div>
 
     <div>
@@ -227,7 +247,8 @@
                     <img src="./Project-2 Hosting Site/assets/Icons/vuesax/bulk/vuesax/bulk/Vector-1.svg" alt="">
                     <p>Kim Taehyung</p>
                     <p>CEO</p>
-                    <p>Web hosting that I recommend is this because the servce is really good, it is fast and with fantastic
+                    <p>Web hosting that I recommend is this because the servce is really good, it is fast and with
+                        fantastic
                         speed</p>
                     <div class="">
                         <img src="./Project-2 Hosting Site/assets/Icons/Star.svg" alt="">
